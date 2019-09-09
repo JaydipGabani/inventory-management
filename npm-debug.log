@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData bower
+8 silly fetchNamedPackageData bower
+9 silly mapToRegistry name bower
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bower',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'bower',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bower
+14 verbose request uri https://registry.npmjs.org/bower
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:29:13 AM
+17 verbose request id a442e8d1b851c816
+18 http request GET https://registry.npmjs.org/bower
+19 info retry will retry, error on last attempt: Error: unable to verify the first certificate
+20 info attempt registry request try #2 at 9:29:25 AM
+21 http request GET https://registry.npmjs.org/bower
+22 info retry will retry, error on last attempt: Error: unable to verify the first certificate
+23 info attempt registry request try #3 at 9:30:29 AM
+24 http request GET https://registry.npmjs.org/bower
+25 silly fetchPackageMetaData Error: unable to verify the first certificate
+25 silly fetchPackageMetaData     at Error (native)
+25 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1065:38)
+25 silly fetchPackageMetaData     at emitNone (events.js:80:13)
+25 silly fetchPackageMetaData     at TLSSocket.emit (events.js:179:7)
+25 silly fetchPackageMetaData     at TLSSocket._init.ssl.onclienthello.ssl.oncertcb.TLSSocket._finishInit (_tls_wrap.js:593:8)
+25 silly fetchPackageMetaData     at TLSWrap.ssl.onclienthello.ssl.oncertcb.ssl.onnewsession.ssl.onhandshakedone (_tls_wrap.js:425:38)
+25 silly fetchPackageMetaData  error for bower { [Error: unable to verify the first certificate] code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE' }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Starting
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: unable to verify the first certificate
+31 verbose stack     at Error (native)
+31 verbose stack     at TLSSocket.<anonymous> (_tls_wrap.js:1065:38)
+31 verbose stack     at emitNone (events.js:80:13)
+31 verbose stack     at TLSSocket.emit (events.js:179:7)
+31 verbose stack     at TLSSocket._init.ssl.onclienthello.ssl.oncertcb.TLSSocket._finishInit (_tls_wrap.js:593:8)
+31 verbose stack     at TLSWrap.ssl.onclienthello.ssl.oncertcb.ssl.onnewsession.ssl.onhandshakedone (_tls_wrap.js:425:38)
+32 verbose cwd C:\Users\HIT\Desktop\inventoryrest\inventory-management-rest
+33 error Windows_NT 10.0.10586
+34 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "bower"
+35 error node v5.11.0
+36 error npm  v3.8.6
+37 error code UNABLE_TO_VERIFY_LEAF_SIGNATURE
+38 error unable to verify the first certificate
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]

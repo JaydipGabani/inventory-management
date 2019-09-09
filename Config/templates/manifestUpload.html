@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=us-ascii'>
+    <title>NAS</title>
+</head>
+<body>
+<h1>{{user}}</h1>
+<div id="table_wrapper">
+    <table>
+        <tr>
+            <th>UPLOADDATE</th>
+            <th>SHIPMENTDATE</th>
+            <th>EXTRUDER</th>
+            <th>PROJECTID</th>
+            <th>PROJECTNAME</th>
+            <th>NBP</th>
+            <th>BL</th>
+            <th>MANIFEST</th>
+            <th>TICKET</th>
+            <th>SO</th>
+            <th>ITEM</th>
+            <th>ASTRO</th>
+            <th>KEYMARK</th>
+            <th>DESCRIPTION</th>
+            <th>FINISHID</th>
+            <th>FINISHNAME</th>
+            <th>LENGTH</th>
+            <th>QTY</th>
+            <th>LBFT</th>
+            <th>NETWEIGHT</th>
+            <th>NOREX</th>
+            <th>LOCATION</th>
+            <th>MODEL</th>
+        </tr>
+        {% for item in body %}
+        <tr>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+            <td>{{item[3]}}</td>
+            <td>{{item[4]}}</td>
+            <td>{{item[5]}}</td>
+            <td>{{item[6]}}</td>
+            <td>{{item[7]}}</td>
+            <td>{{item[8]}}</td>
+            <td>{{item[9]}}</td>
+            <td>{{item[10]}}</td>
+            <td>{{item[11]}}</td>
+            <td>{{item[12]}}</td>
+            <td>{{item[13]}}</td>
+            <td>{{item[14]}}</td>
+            <td>{{item[15]}}</td>
+            <td>{{item[16]}}</td>
+            <td>{{item[17]}}</td>
+            <td>{{item[18]}}</td>
+            <td>{{item[19]}}</td>
+            <td>{{item[20]}}</td>
+            <td>{{item[21]}}</td>
+            <td>{{item[22]}}</td>
+            <td>{{item[23]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
